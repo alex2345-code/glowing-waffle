@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="CSS/calculadoras.css" />
+    <link rel="stylesheet" href="CSS/style2.css" />
+    <link rel="stylesheet" href="JS/iva2.js" />
+    <link rel="stylesheet" href="JS/Iva.js" />
+    <link rel="stylesheet" href="CalculadoraISR.js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ledger&display=swap"
+      rel="stylesheet"/>
+
+    <script
+      src="https://kit.fontawesome.com/6e4577e2dd.js" crossorigin="anonymous"  ></script>
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="indexx.html"> <img src="IMG/fullnofondo.png" /> </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="indexx.html">INICIO</a></li>
+            <li><a href="about.html">ADMINISTRACIÓN</a></li>
+            <li><a href="IVA.html">CALCULAR</a></li>
+            <li><a href="rango.html">ARTÍCULOS</a></li>
+            <li><a href="contact.html">CONTACTO</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Calculadoras Financieras</h1>
+    </section>
+
+    <section class="titulos">
+      <br />
+      <h1>IVA</h1>
+      
+    </section>
+
+    <section class="form-register">
+      <section class="subtitulos">Calcular IVA al 8%</section>
+      <input
+        class="controls"
+        type="text"
+        id="Monto"
+        name="Monto"
+        placeholder="Monto"
+        onChange="CalculoIva();"
+        required
+      />
+      <button class="botons" id="calcular">Calcular</button>
+      <input
+        class="controls"
+        type="text"
+        id="siniva"
+        name="Iva"
+        placeholder="Cantidad sin IVA"
+        readonly
+      />
+      <input
+        class="controls"
+        type="text"
+        id="Iva"
+        name="Iva"
+        placeholder="IVA que se le agrega"
+        readonly
+      />
+      <input
+        class="controls"
+        type="text"
+        id="coniva"
+        name="Iva"
+        placeholder="Cantidad con IVA"
+        readonly
+      />
+    </section>
+    
+    <section class="form-register">
+  
+      <section class="subtitulos" >Calcular IVA al 16%</section>
+      <script src="iva2.js"></script>
+      <input
+        class="controls"
+        type="text"
+        id="Monto2"
+        name="Monto2"
+        placeholder="Monto"
+        onChange="CalculoIva();"
+        required
+      />
+      <button class="botons" id="calcular2">Calcular</button>
+      <input
+        class="controls"
+        type="text"
+        id="siniva2"
+        name="Iva"
+        placeholder="Cantidad sin IVA"
+        readonly
+      />
+      <input
+        class="controls"
+        type="text"
+        id="Iva2"
+        name="Iva"
+        placeholder="IVA que se le agrega"
+        readonly
+      />
+      <input
+        class="controls"
+        type="text"
+        id="coniva2"
+        name="Iva"
+        placeholder="Cantidad con IVA"
+        readonly
+      />
+    </section>
+
+    <section class="titulos">
+    <br><br>
+      <h1>ISR</h1>
+    </section>
+
+    <section>
+      <section class="form-register">
+        <input
+          class="controls"
+          type="text"
+          id="Ingresos"
+          name="IngresosTotales"
+          placeholder="Ingresos Totales"
+          onchange="CalcularISR()"
+          required
+        />
+        <button class="botons" id="Calcular">Calcular (Quincenal)</button>
+        <center><h2>Tarifas:</h2></center>
+        <br />
+        <input
+          class="controls"
+          type="text"
+          id="inf"
+          name="LimiteInferior"
+          placeholder="Límite Inferior"
+          readonly
+        />
+        <input
+          class="controls"
+          type="text"
+          id="excinf"
+          name="ExcedenteLimiteInferior"
+          placeholder="Excedente del Límite Inferior"
+          readonly
+        />
+        <input
+          class="controls"
+          type="text"
+          id="fija"
+          name="CuotaFija"
+          placeholder="Cuota Fija"
+          readonly
+        />
+        <input
+          class="controls"
+          type="text"
+          id="sub"
+          name="SubsidioAlEmpleo"
+          placeholder="Subsidio Al Empleo"
+          readonly
+        />
+        <input
+          class="controls"
+          type="text"
+          id="dev"
+          name="CantidadADevolver"
+          placeholder="Cantidad A Devolver"
+          readonly
+        />
+      </section>
+    </section>
+
+    <!------ Footer------->
+
+    <section class="footer">
+      <h4>Acerca de nosotros</h4>
+      <p>Alcanza tus metas con finanzas personales sanas</p>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>hecho con <i class="fa fa-heart-o"></i> por estudiantes mexicanos</p>
+    </section>
+
+    <script src="JS/Iva.js"></script>
+    <script src="JS/iva2.js"></script>
+    <script src="JS/CalculadoraISR.js"></script>
+  </body>
+</html>

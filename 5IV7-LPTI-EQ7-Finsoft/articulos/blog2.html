@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Page</title>
+    <link rel="stylesheet" href="../CSS/style2.css" />
+    <link rel="stylesheet" href="../CSS/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ledger&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e4577e2dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="../indexx.html"> <img src="../img/fullnofondo.png" /> </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="../indexx.html">INICIO</a></li>
+            <li><a href="../about.html">ADMINISTRACIÓN</a></li>
+            <li><a href="../IVA.html">CALCULAR</a></li>
+            <li><a href="../rango.html">ARTÍCULOS</a></li>
+            <li><a href="../contact.html">CONTACTO</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Entérate en nuestro blog tips para tus finanzas personales</h1>
+    </section>
+
+    <!-- ------ contenido del blog ----- -->
+
+    <div class="container"><br>
+      <h1 class="heading">artículos</h1><br>
+      <div class="box-container">
+
+          <div class="box">
+              <img src="../IMG/2_1.jpg" alt="">
+              <h3>¿Cuáles son los beneficios de ahorrar?</h3>
+              <p>A continuación aprenderásuna serie de ventajas de tener la disciplina del ahorro. </p>
+              <a href="artic2_1.html" class="btn">Ver más</a>
+          </div>
+          <div class="box">
+              <img src="../IMG/2_2.jpg" alt="">
+              <h3>¿Por qué es importante ahorrar?</h3>
+              <p>Obtén un colchón de seguridad, atrévete a ingeniar nuevos proyectos,
+                 esto cuando entiendas por qué es importante ahorrar. </p>
+              <a href="artic2_2.html" class="btn">Ver más</a>
+          </div>
+          <div class="box">
+              <img src="../IMG/2_3.jpg" alt="">
+              <h3>Beneficios de la inversión</h3>
+              <p>Conoce cuáles son los beneficios de la inversión, para cuando lo hagas, lo hagas de la mejor forma. </p>
+              <a href="artic2_3.html" class="btn">Ver más</a>
+          </div>
+          <div class="box">
+              <img src="../IMG/2_4.jpg" alt="">
+              <h3>Cómo funciona una tarjeta de crédito?</h3>
+              <p>Antes de obtener una es vital que estés informado de los aspectos
+                 básicos de una tarjeta de crédito.</p>
+              <a href="artic2_4.html" class="btn">Ver más</a>
+          </div>
+          <div class="box">
+              <img src="../IMG/2_5.jpg" alt="">
+              <h3>Recomendaciones para tus finanzas</h3>
+              <p>Presta atención a los siguientes consejos para mejorar
+                 tus finanzas y evitar gastos innecesarios. </p>
+              <a href="artic2_5.html" class="btn">Ver más</a>
+          </div>
+          <div class="box">
+              <img src="../IMG/2_6.jpg" alt="">
+              <h3>Tips que puedes practicar
+              </h3>
+              <p>El dinero está en todos lados
+                 y qué mejor que aprender a manejarlo 
+                 desde una edad temprana. </p>
+              <a href="artic2_6.html" class="btn">Ver más</a>
+          </div>
+
+
+      </div>
+  </div>
+
+    <!------ Footer------->
+
+    <section class="footer">
+      <h4>Acerca de nosotros</h4>
+      <p>
+        Alcanza tus metas con finanzas personales sanas 
+      </p>
+
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>hecho con <i class="fa fa-heart-o"></i> por estudiantes mexicanos</p>
+    </section>
+
+    <!-- ------JavaScript para ocultar el menu ----- -->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
